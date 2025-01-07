@@ -27,8 +27,8 @@ public class Aula08ArraysMultidimensionais01 {
 
         System.out.println("-------------------------------");
 
-        for(int[] arr : days){
-            for (int num : arr){
+        for (int[] arr : days) {
+            for (int num : arr) {
                 System.out.println(num);
             }
         }

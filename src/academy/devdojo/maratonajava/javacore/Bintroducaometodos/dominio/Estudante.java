@@ -5,7 +5,7 @@ public class Estudante {
     public int age;
     public char sex;
 
-    public void imprime(){
+    public void imprime() {
         System.out.println("------------");
         System.out.println(this.name);
         System.out.println(this.age);

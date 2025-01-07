@@ -4,7 +4,7 @@ public class Aula05EstruturasCondiionais06 {
     public static void main(String[] args) {
         int dayWeek = 3;
 
-        switch (dayWeek){
+        switch (dayWeek) {
             case 1, 7:
                 System.out.println("Final de semana");
                 break;

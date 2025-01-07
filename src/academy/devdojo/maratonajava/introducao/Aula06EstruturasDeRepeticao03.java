@@ -5,7 +5,7 @@ public class Aula06EstruturasDeRepeticao03 {
 
         int maxValue = 50;
         for (int i = 0; i <= maxValue; i++) {
-            if(i <= 25){
+            if (i <= 25) {
                 System.out.println(i);
             } else {
                 break;

@@ -5,8 +5,8 @@ public class Aula06EstruturasDeRepeticao05 {
         double carValue = 30000;
 
         for (int parcel = (int) carValue; parcel >= 1; parcel--) {
-            double parcelValue = carValue/parcel;
-            if (parcelValue < 1000){
+            double parcelValue = carValue / parcel;
+            if (parcelValue < 1000) {
                 continue;
             }
             System.out.println("Parcela: " + parcel + " R$" + parcelValue);

@@ -4,7 +4,7 @@ public class Aula05EstruturasCondiionais05 {
     public static void main(String[] args) {
         byte weekDay = 3;
 
-        switch (weekDay){
+        switch (weekDay) {
             case 1:
                 System.out.println("Sunday");
                 break;
@@ -32,7 +32,7 @@ public class Aula05EstruturasCondiionais05 {
 
         char gender = 'M';
 
-        switch (gender){
+        switch (gender) {
             case 'M':
                 System.out.println("Male");
                 break;

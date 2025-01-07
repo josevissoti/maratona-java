@@ -8,7 +8,11 @@ public class Projeto01JogoDaVelha {
 
         boolean turn = (Math.random() < 0.5);
         int count;
-        String[][] arrayMark = {{"-", "-", "-"}, {"-", "-", "-"}, {"-", "-", "-"}};
+        String[][] arrayMark = {
+                {"-", "-", "-"},
+                {"-", "-", "-"},
+                {"-", "-", "-"}
+        };
 
         System.out.print("\nVocê jogará com a letra X. \nO Computador irá jogar com a letra O");
 

@@ -40,7 +40,7 @@ public class Aula04Operadores {
         int count01 = 0;
         count01 += 5;
         count01 -= 1;
-        count01 *=20;
+        count01 *= 20;
         count01 /= 10;
         count01 %= 2;
         count01++;
