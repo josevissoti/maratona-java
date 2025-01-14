@@ -48,11 +48,4 @@ public class Anime {
         this.nome = nome;
     }
 
-    public int[] getEpisodios() {
-        return episodios;
-    }
-
-    public void setEpisodios(int[] episodios) {
-        this.episodios = episodios;
-    }
 }
