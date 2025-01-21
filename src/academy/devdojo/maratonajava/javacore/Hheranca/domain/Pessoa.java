@@ -1,11 +1,28 @@
-package academy.devdojo.maratonajava.javacore.HHeranca.domain;
+package academy.devdojo.maratonajava.javacore.Hheranca.domain;
 
 public class Pessoa {
     protected String nome;
     protected String cpf;
     protected Endereco endereco;
 
-    public void imprint(){
+    static {
+        System.out.println("Dentro do bloco de inicialização static Pessoa");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização Pessoa 1");
+    }
+
+    {
+        System.out.println("Dentro do bloco de inicialização Pessoa 2");
+    }
+
+    public Pessoa(String nome) {
+        System.out.println("Dentro do construtor Pessoa");
+        this.nome = nome;
+    }
+
+    public void imprint() {
         System.out.println(this.nome);
         System.out.println(this.cpf);
         System.out.println(this.endereco.getRua() + " " + this.endereco.getCep());
