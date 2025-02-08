@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Npolimorfismo.domain;
 
 public class Tomate extends Produto {
-    private int dataValidade;
+    private String dataValidade;
     public static final double IMPOSTO = 0.15;
 
     public Tomate(String nome, double valor) {
@@ -13,11 +13,11 @@ public class Tomate extends Produto {
         return this.getValor() * IMPOSTO;
     }
 
-    public int getDataValidade() {
+    public String getDataValidade() {
         return dataValidade;
     }
 
-    public void setDataValidade(int dataValidade) {
+    public void setDataValidade(String dataValidade) {
         this.dataValidade = dataValidade;
     }
 }
