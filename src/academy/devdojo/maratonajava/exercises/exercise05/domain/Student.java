@@ -1,17 +1,17 @@
 package academy.devdojo.maratonajava.exercises.exercise05.domain;
 
 public class Student extends Person{
-    private Classroom calassroom;
+    private Classroom claassroom;
 
     public Student(String nome, int idade, String endereco) {
         super(nome, idade, endereco);
     }
 
-    public Classroom getCalassroom() {
-        return calassroom;
+    public Classroom getClaassroom() {
+        return claassroom;
     }
 
-    public void setCalassroom(Classroom calassroom) {
-        this.calassroom = calassroom;
+    public void setClaassroom(Classroom claassroom) {
+        this.claassroom = claassroom;
     }
 }
