@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Oexception.excption.view;
+package academy.devdojo.maratonajava.javacore.Oexception.execption.view;
 
 import java.io.File;
 import java.io.IOException;
