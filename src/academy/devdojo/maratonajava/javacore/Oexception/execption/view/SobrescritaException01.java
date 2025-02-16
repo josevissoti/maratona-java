@@ -14,13 +14,13 @@ public class SobrescritaException01 {
         try {
             pessoa.salvar();
         } catch (FileNotFoundException | LoginInvalidoException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
         try {
             funcionario.salvar();
-        } catch (LoginInvalidoException e) {
-            throw new RuntimeException(e);
+        } catch (LoginInvalidoException | RuntimeException e) {
+            e.printStackTrace();
         }
     }
 }
