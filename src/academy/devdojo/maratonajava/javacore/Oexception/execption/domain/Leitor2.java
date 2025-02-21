@@ -8,4 +8,8 @@ public class Leitor2 implements Closeable {
     public void close() throws IOException {
         System.out.println("Fechando leiror 2");
     }
+
+    public void imprint() {
+        System.out.println("Leitura de Leitor 2");
+    }
 }

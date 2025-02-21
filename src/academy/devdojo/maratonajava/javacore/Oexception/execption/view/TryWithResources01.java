@@ -7,13 +7,14 @@ import java.io.*;
 
 public class TryWithResources01 {
     public static void main(String[] args) {
-
+        lerArquivo1();
     }
 
     public static void lerArquivo1() {
         try (Leitor1 leitor1 = new Leitor1();
              Leitor2 leitor2 = new Leitor2()) {
-
+            leitor1.imprint();
+            leitor2.imprint();
         } catch (IOException e) {
             e.printStackTrace();
         }
