@@ -16,9 +16,10 @@ public class PathView02 {
         Path subPastaPath = Paths.get("pasta/subpasta/subsubspasta");
         Path subPastaDirectory = Files.createDirectories(subPastaPath);
         Path filePath = Paths.get(subPastaPath.toString(), "file.txt");
-        
-        if (Files.notExists(subPastaPath)) {
+
+        if (Files.notExists(filePath)) {
             Path filePathCreated = Files.createFile(filePath);
+            System.out.println(filePathCreated);
         }
 
         Path source = filePath;
