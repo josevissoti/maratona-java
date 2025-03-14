@@ -17,6 +17,6 @@ class ListAllFiles extends SimpleFileVisitor<Path> {
 public class SimpleFileVisitorView01 {
     public static void main(String[] args) throws IOException {
         Path root = Paths.get(".");
-        Files.walkFileTree(root, new ListJavaFiles());
+        Files.walkFileTree(root, new ListAllFiles());
     }
 }
