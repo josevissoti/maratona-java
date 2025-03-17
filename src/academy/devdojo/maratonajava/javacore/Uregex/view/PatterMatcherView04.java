@@ -16,13 +16,13 @@ public class PatterMatcherView04 {
         // ? zero ou uma
         // * zero ou mais
         // + uma ou mais
-        // {n, m} de n até m
+        // {n,m} de n até m
         // () agrupamento
         // | ou
         // $ fim da linha
         // . 1.3 = 123, 133, 1@3, 1A3
-        String regex = "([a-zA-Z0-9._-])+@([a-zA-Z])+(\\.([a-z])+)+";
-        String texto = "luffy@hotmail.com, 123jotaro@gmail.com, #@!zoro@mail.br, teste@gmail.com.br, sakura@mail";
+        String regex = "([a-zA-Z0-9._-]){8,}@([a-zA-Z])+(\\.([a-z])+)+";
+        String texto = "mugiwaraluffy@hotmail.com, 123jotaro@gmail.com, #@!zoro@mail.br, teste@gmail.com.br, sakura@mail";
 
         System.out.println("Email válido");
         System.out.println("zoro@mail.br".matches(regex));

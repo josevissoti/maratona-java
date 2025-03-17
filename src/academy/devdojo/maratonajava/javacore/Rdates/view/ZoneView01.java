@@ -11,6 +11,7 @@ public class ZoneView01 {
         Map<String, String> shortIds = ZoneId.SHORT_IDS;
         System.out.println(shortIds);
         System.out.println(ZoneId.systemDefault());
+
         ZoneId zoneIdOdTokyo = ZoneId.of("Asia/Tokyo");
 
         LocalDateTime localDateTime = LocalDateTime.now();
