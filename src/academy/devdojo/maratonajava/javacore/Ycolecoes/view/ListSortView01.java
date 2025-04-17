@@ -26,6 +26,7 @@ public class ListSortView01 {
         }
 
         System.out.println(dinheiros);
+        Collections.sort(dinheiros);
         System.out.println(dinheiros);
     }
 }
