@@ -27,6 +27,7 @@ public class Manga implements Comparable<Manga> {
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", preco=" + preco +
+                ", quantidade=" + quantidade +
                 '}';
     }
 
