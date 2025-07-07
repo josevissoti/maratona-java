@@ -7,7 +7,7 @@ public class OuterClassesView01 {
     class Inner {
         public void printOuterClassAttribute() {
             System.out.println(name);
-            System.out.println(this);
+            System.out.println(this );
         }
     }
 
