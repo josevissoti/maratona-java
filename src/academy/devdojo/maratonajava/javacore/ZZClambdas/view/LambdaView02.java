@@ -7,8 +7,8 @@ import java.util.function.Function;
 public class LambdaView02 {
     public static void main(String[] args) {
         List<String> names = List.of("Natsu", "Alucard");
-        List<Integer> integers = map(names, s -> s.length());
-        List<String> strings = map(names, s -> s.toUpperCase());
+        List<Integer> integers = map(names, String::length);
+        List<String> strings = map(names, String::toUpperCase);
         System.out.println(integers);
         System.out.println(strings);
     }
