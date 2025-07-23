@@ -6,19 +6,17 @@ import academy.devdojo.maratonajava.javacore.ZZClambdas.services.AnimeComparator
 import java.util.ArrayList;
 import java.util.List;
 
-public class MethodReferenceView01 {
+public class MethodReferenceView02 {
     public static void main(String[] args) {
+        AnimeComparators animeComparators = new AnimeComparators();
         List<Anime> animeList = new ArrayList<>(List.of(
                 new Anime("Berserk", 800),
                 new Anime("One Piece", 1200),
                 new Anime("Naruto", 720)
         ));
 
-        //animeList.sort((a1, a2) -> a1.getTitle().compareTo(a2.getTitle()));
-        animeList.sort(AnimeComparators::compareByTitle);
-        System.out.println(animeList);
-
-        animeList.sort(AnimeComparators::compareByEpisodes);
+        animeList.sort(animeComparators::compareByEpisodesNonStatic);
+        //animeList.sort((a1, a2) -> animeComparators.compareByEpisodesNonStatic(a1, a2));
         System.out.println(animeList);
     }
 }
