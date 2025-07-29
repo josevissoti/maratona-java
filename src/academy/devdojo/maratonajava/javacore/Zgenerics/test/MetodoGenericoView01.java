@@ -1,10 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Zgenerics.test;
 
 import academy.devdojo.maratonajava.javacore.Zgenerics.domain.Barco;
-import academy.devdojo.maratonajava.javacore.Zgenerics.domain.Carro;
-import academy.devdojo.maratonajava.javacore.Zgenerics.service.RentalService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MetodoGenericoView01 {
@@ -13,14 +10,20 @@ public class MetodoGenericoView01 {
         System.out.println(barcoList);
     }
 
+    /*
+        Ao se criar um metodo genérico, é usado um `<T>` entre o modificador de acesso e o tipo de retorno
+        Define que o metodo ira utilizar um parâmetro generico nas condições postas.
+     */
     private static <T> List<T> criarArrayComUmObjeto(T t) {
         return List.of(t);
     }
 
     /*
-    private static <T extends Comparable<T>> List<T> criarArrayComUmObjeto(T t) {
+        Condições podem ser impostas sob as classes genéricas.
+        extends Comparable<T> - Define que apenas classes que implementam a interface Comparable podem ser utilizadas.
+     */
+    private static <T extends Comparable<T>> List<T> criarArrayComUmObjeto02(T t) {
         return List.of(t);
     }
-    */
 
 }

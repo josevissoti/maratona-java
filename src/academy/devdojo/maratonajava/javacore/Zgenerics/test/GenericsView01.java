@@ -18,6 +18,10 @@ public class GenericsView01 {
 
     }
 
+    /*
+    List<> - O que estiver inserido em <> define o tipo de parâmetro da List.
+        - Usado para evitar conflitos com classes distintas.
+     */
     private static void addList(List lista, Consumidor consumidor){
         lista.add((consumidor));
     }

@@ -2,6 +2,11 @@ package academy.devdojo.maratonajava.javacore.Bintroducaometodos.domain;
 
 public class Calculadora {
 
+    /*
+        Metodo é um bloco de código utilizado para definir um comportamento ou uma ação que um objeto pode realizar.
+        Possui uma sequência de instruções, que podem ou não ter um retorno de acordo com cada situação.
+    */
+
     public void somaDoisNumeros() {
         System.out.println(10 + 10);
     }
@@ -37,6 +42,11 @@ public class Calculadora {
         System.out.println("Segundo número: " + numero2);
     }
 
+    /*
+        Mwtodo público, com retorno de tipo vazio, nomeado `somaArray()`.
+        Eecebe um Array de valores inteiros que será nomeado como `numbers` durante a utilização do metodo.
+        Esse metodo possui a função de somar todos os números contidos no Array e imprimi-los no console.
+     */
     public void somaArray(int[] numbers) {
         int sum = 0;
         for (int num : numbers) {

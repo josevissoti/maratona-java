@@ -6,9 +6,14 @@ public class CarroTest01 {
 
     public static void main(String[] args) {
 
+        /*
+            Objetos são instâncias concretas geradas a partir de uma Classe.
+            Representam um elemento real dessa Classe que possui estado e comportamento.
+         */
         Carro carro1 = new Carro();
         Carro carro2 = new Carro();
 
+        //Uma Classe com seus atributos como 'public' podem ser definidos da seguinte forma:
         carro1.nome = "Duster";
         carro1.modelo = "Renault";
         carro1.ano = 2022;
@@ -17,6 +22,7 @@ public class CarroTest01 {
         carro2.modelo = "Nissan";
         carro2.ano = 2023;
 
+        //Uma Classe com seus atributos como `public` podem ser acessados da seguinte forma:
         System.out.println("\nNome: " + carro1.nome + "\nModelo: " + carro1.modelo + "\nAno: " + carro1.ano);
         System.out.println("\nNome: " + carro2.nome + "\nModelo: " + carro2.modelo + "\nAno: " + carro2.ano);
     }

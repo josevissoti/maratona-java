@@ -14,12 +14,27 @@ public class WildcardView02 {
         printConsultaAnimal(animals);
     }
 
+    /*
+        ? - Define o uso do Wildcard
+          - Utilizado para se referenciar a um tipo genérico sem a necessidade de saber ou modificar o tipo.
+          - Condições podem ser postas para limitar as classes utilizadas.
+     */
+
+    /*
+        Ao se usar 'extends', define que Classes filhas de Animal são aceitas como parâmetro.
+        Não se pode adicionar elementos em métodos com extends
+            - Evita conflitos de classes específicas incompatíveis.
+     */
     private static void printConsulta(List<? extends Animal> animals) {
         for (Animal animal : animals) {
             animal.consulta();
         }
     }
 
+    /*
+        Ao se usar 'super', define que Classes pai de Animal são aceitas como parâmetro.
+            - Evita problemas de conflito entre classes específicas por se utilizar parâmetros genéricos.
+     */
     private static void printConsultaAnimal(List<? super Animal> animals) {
         animals.add(new Cachorro());
         animals.add(new Gato());

@@ -12,6 +12,10 @@ public class RentalService<T> {
         this.objetosDisponiveis = objetosDisponiveis;
     }
 
+    /*
+     <T> - Define que qualquer classe pode ser utilizada de forma genérica
+           Código adaptável a cada tipo de classe de forma flexível.
+     */
     public T buscarObjetoDisponivel() {
         System.out.println("Buscando objeto disponível...");
         T t = objetosDisponiveis.remove(0);
